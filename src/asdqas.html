@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="valya.css" rel="stylesheet">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1096.0" data-gr-ext-installed="">
+    <nav class="header">
+        <a class="item1" href="/orders/">kaztechdrive</a>
+        <div class="item1 personal_area">
+            
+        </div>
+    </nav>
+    
+    <style>
+    input[id="id_password"], input[id="id_username"] {
+        background-color: rgba(217, 217, 217, 0.4);
+        border: none;
+        border-radius: 10px;
+        width: 40vw;
+        height: 50px;
+    }
+
+    form>p:nth-child(2), form>p:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a {
+        text-decoration: none;
+        
+    }
+
+    .login_button {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    </style>
+    <p class="login_tittle">
+        <span>Сервис хранения и создания заявок</span><br>
+        (спросите логин и пароль у вашего админа)
+    </p>
+        
+
+    <form class="input_form" method="post" action="/orders/login/">
+            <input type="hidden" name="csrfmiddlewaretoken" value="A8CsSUpKcQI6841tLYrp61xZM4ByLaE8yLqBu8Afuy2pxIATg7T4myORDaWeR3ys">
+            <p>
+                <label for="id_username">Имя пользователя:</label> 
+                <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+            </p>
+            <p>
+                <label for="id_password">Пароль:</label> 
+                <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+            </p>
+        <!-- <input type="hidden" name="next" value="/" /> -->
+            <input type="hidden" name="next">
+        <button class="login_button" type="submit">Войти</button>
+    </form>
+    <p style="margin: 0% 3% 3% 5%;">Или <a href="/admin/">войти как админ</a> </p>
+    
+</html>

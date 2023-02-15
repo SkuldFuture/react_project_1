@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="valya.css" />
+  </head>
+  <body>
+    <div class="order_card">
+      <div class="header_order_card">
+        <p><span>Заявка №1</span></p>
+        <p><span>ИП Карл Фридрих Гаусс</span></p>
+        <p><span>Статус заявки:</span> Created</p>
+      </div>
+      <div class="body_order_card">
+        <ul class="client_order_card">
+          <h3>Клиент</h3>
+          <li class="left_field">
+            <span>Фирма клиента</span>ИП Карл Фридрих Гаусс
+          </li>
+          <li class="left_field"><span>Номер клиента</span>+1 408 2799494</li>
+          <li class="left_field">
+            <span>Направление</span>Астана - Калифорния
+          </li>
+          <li class="left_field"><span>Вид оплаты клиента</span>блокчейн</li>
+          <li class="left_field">
+            <span>Реквизиты клиента</span>3489 3424 3940 3290
+          </li>
+          <li class="left_field"><span>Сумма оплаты клиента</span>432948023</li>
+          <li class="left_field"><span>Вес, объем</span>10 кг</li>
+          <li class="left_field"><span>Штраф</span>23</li>
+        </ul>
+        <ul class="driver_order card">
+          <h3>Водитель</h3>
+          <li class="right_field"><span>ФИО водителя</span>Карл Бенц</li>
+          <li class="right_field"><span>ИИН водителя</span>760724300757</li>
+          <li class="right_field"><span>Рег.номер водителя</span>A111AA00</li>
+          <li class="right_field">
+            <span>Сумма оплаты водителю</span>423904820
+          </li>
+          <li class="right_field"><span>Предоплата водителю</span>23422</li>
+          <li class="right_field"><span>Номер водителя</span>+77375558601</li>
+          <li class="right_field"><span>Дата погрузки</span>03/02/2023 1:49</li>
+          <li class="right_field"><span>Дата выгрузки</span>03/02/2023 1:49</li>
+        </ul>
+      </div>
+      <div class="footer_order_card">
+        <a href="/orders/update_order/1/">Редактировать заявку</a>
+        <button id="delete_order">Удалить заявку</button>
+      </div>
+    </div>
+
+    <dialog id="delete_order_dialog">
+      <form method="dialog">
+        <p>Вы действительно хотите удалить заявку?</p>
+        <div style="display: flex; justify-content: space-between">
+          <button id="delete">Да</button>
+          <button id="cancel" type="reset">Нет</button>
+        </div>
+      </form>
+    </dialog>
+    <script src="deleteOrderModal.js">
+    </script>
+  </body>
+</html>

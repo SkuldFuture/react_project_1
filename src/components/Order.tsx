@@ -39,8 +39,8 @@ function Order({order}: OrderProps) {
                 </ul>
             </div>
             <div className='footer_order_card'>
-                <span>Редактировать заявку</span>
-                <span>Удалить заявку</span>
+                <a href="/orders/update_order/1/">Редактировать заявку</a>
+                <a href="/orders/update_order/1/">Удалить заявку</a>
             </div>
         </div>
     )

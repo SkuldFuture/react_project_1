@@ -84,7 +84,7 @@ ul {
   padding: 0;
   margin-right: 3%;
   margin-top: 0;
-  width: 28vw;
+  width: 50%;
 }
 
 li {
@@ -155,7 +155,7 @@ select {
   font-size: inherit;
   cursor: pointer;
   line-height: inherit;
-  width: 15vw;
+  width: 250px;
   height: 50px;
   background-color: rgba(217, 217, 217, 0.4);
 }

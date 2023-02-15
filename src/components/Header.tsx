@@ -3,15 +3,15 @@ import { Fio } from "./UI/Fio";
 import { Quit } from "./UI/Quit";
 
 function Header() {
-    return (
+  return (
     <nav className="header">
-        <Logo />
-        <div className="item1 personal_area">
-            <Fio />
-            <Quit />
-        </div>
+      <Logo />
+      <div className="item1 personal_area">
+        <Fio />
+        <Quit />
+      </div>
     </nav>
-    )
+  );
 }
 
-export { Header }
+export { Header };
